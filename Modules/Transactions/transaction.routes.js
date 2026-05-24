@@ -5,7 +5,7 @@ const jsonwebtoken = require("jsonwebtoken");
 const auth = require("../../Middleware/auth");
 const addIncome = require("./Controllers/addIncome");
 const addexpense = require("./Controllers/addExpense");
-const getTransactions = require("./Controllers/gettransactions");
+const getTransactions = require("./Controllers/getTransactions");
 const deleteTransaction = require("./Controllers/deleteTransactions");
 const editTransaction = require("./Controllers/editTransactions");
 const transactionRoutes = express.Router();
@@ -17,6 +17,6 @@ transactionRoutes.post("/addIncome", addIncome);
 transactionRoutes.post("/addExpense", addexpense);
 transactionRoutes.get("/", getTransactions);
 transactionRoutes.delete("/:transaction_id", deleteTransaction);
-transactionRoutes.patch("/",editTransaction);
+transactionRoutes.patch("/", editTransaction);
 
 module.exports = transactionRoutes;
