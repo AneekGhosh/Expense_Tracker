@@ -2,9 +2,9 @@ const express = require("express");
 
 const register = require("./Controllers/Register");
 const login = require("./Controllers/login");
-const userDashboard = require("./Controllers/userDashboard");
-const forgotPassword = require("./Controllers/forgotPassword");
-const resetPassword = require("./Controllers/resetPassword");
+const userDashboard = require("./Controllers/userdashboard");
+const forgotPassword = require("./Controllers/forgotpassword");
+const resetPassword = require("./Controllers/resetpassword");
 
 const auth = require("../../Middleware/auth");
 
