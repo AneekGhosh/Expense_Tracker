@@ -8,7 +8,7 @@ const mongoose = require("mongoose");
 const user = require("./Models/user.model");
 const transactions = require("./Models/transactions.model");
 
-const userroutes = require("./Modules/Users/user.Routes");
+const userroutes = require("./Modules/Users/user.routes");
 const transactionRoutes = require("./Modules/Transactions/transaction.routes");
 
 // Connect to MongoDB
