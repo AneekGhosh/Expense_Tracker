@@ -143,7 +143,7 @@ function Home() {
           </a>
 
           <a
-            href="www.linkedin.com/in/aneek-ghosh-a93127249"
+            href="https://www.linkedin.com/in/aneek-ghosh-a93127249/"
             target="_blank"
             rel="noreferrer"
             className="text-decoration-none text-light"
