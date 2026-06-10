@@ -38,6 +38,7 @@ const forgotPassword = async (req, res) => {
   res.status(200).json({
     status: "Reset code sent to email successfully!",
   });
+  console.log("EMAIL SENT");
 };
 
 module.exports = forgotPassword;

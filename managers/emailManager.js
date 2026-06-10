@@ -5,8 +5,8 @@ const emailManager = async (to, text, html, subject) => {
     host: "sandbox.smtp.mailtrap.io",
     port: 2525,
     auth: {
-      user: "091a1baf308b39",
-      pass: "74fe607dd10022",
+      user: "a0557dee3886f1",
+      pass: "904665d29786a8",
     },
   });
 

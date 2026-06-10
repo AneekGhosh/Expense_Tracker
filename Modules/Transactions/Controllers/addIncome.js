@@ -7,10 +7,14 @@ const addIncome = async (req, res) => {
 
   const { amount, remarks } = req.body;
 
+  console.log("BODY:", req.body);
+  console.log("USER:", req.user);
+
   if (!amount) throw "Amount is required!";
   if (!remarks) throw "Remarks is required!";
 
-  if (remarks.length < 5) throw "Remarks must be at least 5 characters long!";
+  if (remarks.length < 5)
+    throw "Remarks must be at least 5 characters long!";
 
   if (!validator.isNumeric(amount.toString()))
     throw "Amount must be a valid number.";
@@ -35,7 +39,7 @@ const addIncome = async (req, res) => {
     },
     {
       runValidators: true,
-    },
+    }
   );
 
   res.status(200).json({
